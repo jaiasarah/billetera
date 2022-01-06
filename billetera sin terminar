@@ -1,0 +1,27 @@
+def gasto_del_dia (a,b,c,d,e):
+    return a+b+c+d+e
+
+def quedan (a,b):
+    return a-b
+
+print("Hola! Soy Jaia, tu nuevo control de billetera esta a punto de ser estrenado!")
+dinero_disponible= int(input("Empecemos, decime cual es tu posible gasto diario en pesos"))
+print("Elije la opción del control que necesitas realizar")
+print("1- Quiero sumar mis gastos")
+print("2- Quiero saber cuanto dinero me queda disponible")
+print("3- Salir")
+opción= int(input("Elija la opción"))
+if (opción==1):
+    gasto1=int(input("ingrese el gasto uno"))
+    gasto2=int(input("ingrese el gasto dos"))
+    gasto3=int(input("ingrese el gasto tres"))
+    gasto4=int(input("ingrese el gasto cuatro"))
+    gasto5=int(input("ingrese el gasto cinco"))
+    print ("La suma de sus gastos de hoy es:")
+    print (gasto_del_dia(gasto1,gasto2,gasto3,gasto4,gasto5))
+elif(opción==2):
+    num1=dinero_disponible
+    num2=gasto_del_dia
+    print("Te quedan $")
+    print (quedan(num1,num2))
+    print("disponible")
